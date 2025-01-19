@@ -21,3 +21,5 @@
   ```sh
   dnf install <package-name>
   ```
+
+- Default user for Amazon Linux is `ec2-user`
