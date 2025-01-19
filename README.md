@@ -15,3 +15,9 @@
     ```sh
     icacls "C:\example\file.txt" /grant User:R
     ```
+
+- Install packages in Amazon Linux
+
+  ```sh
+  dnf install <package-name>
+  ```
