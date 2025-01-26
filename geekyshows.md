@@ -37,3 +37,6 @@
   ```
 
 - [Install Apache MySQL and PHP in AWS EC2](https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html)
+
+- [Run commands when you launch an EC2 instance with user data input
+](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
