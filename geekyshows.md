@@ -40,3 +40,5 @@
 
 - [Run commands when you launch an EC2 instance with user data input
 ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
+
+- [Amazon Machine Images in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
