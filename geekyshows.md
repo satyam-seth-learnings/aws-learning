@@ -44,3 +44,23 @@
 - [Amazon Machine Images in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 
 - [Placement groups for your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+
+- AWS Load Balancer What is Load Balancer Type of Load Balancer instance user data
+
+  ```sh
+  #!/bin/bash
+  
+  # Update the package list and install Apache
+  dnf update -y
+  dnf install -y httpd
+  
+  # Start the Apache service and enable it to start on boot
+  systemctl start httpd
+  systemctl enable httpd
+  
+  # Create a simple web page
+  echo "Hello Instance 1" > /var/www/html/index.html
+  
+  # Restart Apache to apply changes (optional)
+  systemctl restart httpd
+  ```
