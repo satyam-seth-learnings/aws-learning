@@ -64,3 +64,5 @@
   # Restart Apache to apply changes (optional)
   systemctl restart httpd
   ```
+
+- [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html)
