@@ -100,3 +100,7 @@
       ```config
       /dev/xdbd       /data   ext4    defaults,nofail 0       2
       ```
+
+- [Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
+
+  - [Manually installing the Amazon EFS client](https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html) 
