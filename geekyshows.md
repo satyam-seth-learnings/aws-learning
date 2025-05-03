@@ -66,3 +66,37 @@
   ```
 
 - [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html)
+
+- [AWS Elastic Block Store EBS](https://youtu.be/nhds4IbMUIk?si=t3sik1LWAu1vJAQl)
+
+  - List information about block devices, such as hard drives, SSDs, and their partitions
+  
+    ```sh
+    lsblk
+    ```
+  
+  - Format a partition or disk
+  
+    ```
+    sudo mkfs.ext4 <disk/partition>
+    ```
+
+  - Mount a disk
+
+    ```sh
+    sudo mount <disk> <mount-dir>
+    ```
+
+  - Auto mount disk on system reboot
+  
+    - Open fstab using nano
+
+      ```sh
+      sudo nano /etc/fstab
+      ```
+    
+    - Write content
+
+      ```config
+      /dev/xdbd       /data   ext4    defaults,nofail 0       2
+      ```
