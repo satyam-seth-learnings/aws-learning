@@ -104,3 +104,9 @@
 - [Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
 
   - [Manually installing the Amazon EFS client](https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html) 
+
+- [AWS S3](https://docs.aws.amazon.com/s3/)
+
+  - [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/)
+
+  - [Bucket Policy Examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html?icmpid=docs_amazons3_console)
