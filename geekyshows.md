@@ -110,3 +110,6 @@
   - [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/)
 
   - [Bucket Policy Examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html?icmpid=docs_amazons3_console)
+
+- [Configuring a webpage redirect](https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html)
+
