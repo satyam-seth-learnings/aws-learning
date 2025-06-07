@@ -118,3 +118,21 @@
 - [Comparing the Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-compare)
 
 - [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+- Configure AWS CLI
+
+  ```sh
+  aws configure
+  ```
+
+- List AWS CLI all profiles
+
+  ```sh
+  aws configure list-profiles
+  ```
+
+- Check AWS CLI current profile info
+
+  ```sh
+  aws configure list
+  ```
