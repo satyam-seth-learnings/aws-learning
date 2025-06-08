@@ -208,3 +208,67 @@
   ```sh
   sudo mysql -u <username>
   ```
+
+- Install PHP in EC2
+
+  ```sh
+  sudo dnf install php php-mysqlnd php-fpm -y
+  ```
+
+- Replace user and group from `apache` to `nginx` in `/etc/php-fpm.d/www.conf` file
+
+  ```sh
+  vsudo nano /etc/php-fpm.d/www.conf
+  ```
+
+- Start PHP-FPM
+
+  sudo systemctl start php-fpm
+
+- Enable PHP-FPM
+
+  ```sh
+  sudo systemctl enable php-fpm
+  ```
+
+- Create Nginx config for PHP in file `/etc/nginx/conf.d/default.conf` (Need to verify)
+
+  ```conf
+  {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+
+    index index.php index.html;
+
+    location / {
+      try_files $uri/ =404;
+    }
+
+    location ~ \.php$ {
+      include fastcgi_params;
+      fastcgi_pass 127.0.0.1:9000;
+      fastcgi_index index.php;
+      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      include fastcgi_params;
+    }
+  }
+  ```
+
+- Check Nginx config is valid or not
+
+  ```sh
+  sudo nginx -t
+  ```
+
+- Reload Nginx
+
+  ```sh
+  sudo systemctl reload nginx
+  ```
+
+- If you want, change default index.html
+
+  ```sh
+  sudo nano /usr/share/nginx/html/index.html
+  ```
