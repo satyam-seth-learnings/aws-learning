@@ -136,3 +136,34 @@
   ```sh
   aws configure list
   ```
+
+- Install Nginx in ec2
+
+  ```sh
+  sudo dnf install nginx -y
+  ```
+
+- Check Nginx installed or not 
+
+  ```sh
+  nginx -V
+  ```
+
+- Start Nginx
+
+  ```sh
+  sudo systemctl start nginx
+  ```
+
+- Enable Nginx
+
+  ```sh
+  sudo systemctl enable nginx
+  ```
+
+- Check Nginx status
+
+  ```sh
+  sudo syetemctl status nginx
+  ```
+  
