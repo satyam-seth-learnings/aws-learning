@@ -137,7 +137,7 @@
   aws configure list
   ```
 
-- Install Nginx in ec2
+- Install Nginx in EC2
 
   ```sh
   sudo dnf install nginx -y
@@ -164,6 +164,47 @@
 - Check Nginx status
 
   ```sh
-  sudo syetemctl status nginx
+  sudo systemctl status nginx
   ```
-  
+
+- Install MariaDB in EC2
+
+  ```sh
+  sudo install mariadb105-server -y
+  ```
+
+- Check MariaDB installed or not
+
+  ```sh
+  mariadb -V
+  ```
+
+- Start MariaDB
+
+  ```sh
+  sudo systemctl start mariadb
+  ```
+
+- Enable MariaDB
+
+  ```sh
+  sudo systemctl enable mariadb
+  ```
+
+- Check MariaDB status
+
+  ```sh
+  sudo systemctl status mariadb
+  ```
+
+- Configure mariadb
+
+  ```sh
+  sudo mysql_secure_installation
+  ```
+
+- Login into mariadb
+
+  ```sh
+  sudo mysql -u <username>
+  ```
