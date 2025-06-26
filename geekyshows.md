@@ -272,3 +272,9 @@
   ```sh
   sudo nano /usr/share/nginx/html/index.html
   ```
+
+- Install python package for aws lambda zip
+
+  ```sh
+  pip install -t . <package-name>
+  ```
