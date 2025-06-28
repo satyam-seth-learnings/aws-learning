@@ -278,3 +278,5 @@
   ```sh
   pip install -t . <package-name>
   ```
+
+- [Creating and connecting to a MariaDB DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MariaDB.html)
